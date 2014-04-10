@@ -1,5 +1,4 @@
 d3.csv("Unemployment.csv",function (d) {
-    console.log(d);
     d=_.map(d,function(x) {
         x.Unemployment=parseInt(x.Unemployment);
         return  x;
@@ -29,7 +28,6 @@ d3.csv("Unemployment.csv",function (d) {
 
     sel.on("change",function() {
         var y=sel[0][0].value;
-        console.log(y);
         bcyear(y);
         });
     });

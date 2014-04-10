@@ -37,7 +37,6 @@ d3.csv("Unemployment.csv",function(d) {
             },
             {}));
 
-    console.log(pdata);
     svg.selectAll("path")
         .data(pdata)
         .enter()
@@ -56,7 +55,6 @@ d3.csv("Unemployment.csv",function(d) {
             return yscale(_.last(d).Unemployment)+3  })
         .text(function(d) { return d[0]["Country Name"] });
 
-     console.log(years);
 
      var axis=d3.svg.axis()
             .scale(xscale)

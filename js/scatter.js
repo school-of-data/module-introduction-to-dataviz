@@ -36,13 +36,11 @@ d3.csv("Unemployment.csv",function(d) {
             return y.Year==year }))
         }
     var scp=function(data,y1,y2) {
-        console.log(y1,y2);
         var circles=svg.selectAll("circle") 
             .data(data)
             .enter()
             .append("circle")
             .attr("id",function(d) {
-                console.log("adding");
                 return slugify(d[0]["Country Name"]) })
             .attr("r",3)
          
@@ -52,7 +50,6 @@ d3.csv("Unemployment.csv",function(d) {
         circles.transition()
             .attr("cx",function(d) { return xscale(getyear(d,y1).Unemployment) })
             .attr("cy",function(d) {
-                console.log("repositioning");
                 return yscale(getyear(d,y2).Unemployment) }) 
 
         svg.select("#xlab")
@@ -105,7 +102,6 @@ d3.csv("Unemployment.csv",function(d) {
         .text(function(d) { return d; });
 
     selectors.on("change",function(d) {
-        console.log(selectors);
         var y1=selectors[0][0].value;
         var y2=selectors[0][1].value;
         scp(scd,y1,y2);
