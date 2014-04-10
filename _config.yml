@@ -1,3 +1,4 @@
 
 # General Stettings
 permalink: /:categories/:year/:month/:day/:title
+markdown: kramdown
