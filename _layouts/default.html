@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/basic.css" />
+{% for c in page.css %}
+<link rel="stylesheet" href="{{c}}" />
+{% endfor %}
+</head>
+<body>
+<div class="container">
+{{ content }}
+</div>
+{% for j in page.js %}
+<script src="{{j}}"></script>
+{% endfor %}
+</body>

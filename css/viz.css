@@ -1,0 +1,65 @@
+svg  rect, svg circle {
+    fill: #CCCCFF;
+    }
+
+svg {   
+    margin-left: auto;
+    margin-right: auto;
+    }
+circle#dot1-european-union, circle#dot2-european-union, circle#european-union, rect#european-union {
+    fill: #5555FF;
+    }
+
+path#european-union {
+    stroke: #5555FF;
+    stroke-width: 1.5px;
+    }
+circle {
+    stroke: #555555;
+    }
+
+svg path {
+    fill: none;
+    stroke: #CCCCFF;
+    stroke-width: 1px;
+    }
+
+.select select, #select select {
+    background: white;
+    font-size: 100%;
+    font-weight: bold;
+    }
+
+.llabel, .label {
+    font-size: 70%;
+    fill: #CCCCFF;
+    }
+ 
+#label2-european-union, #label-european-union {
+    fill: #5555FF;
+    }
+
+.tick text {
+    font-size: 70%;
+    fill: #555555;
+    }
+#xlab, #ylab {
+    fill: #555555;
+    font-size: 90%;
+    }
+line.base, .axis path, .tick line {
+    stroke: #555555;
+    }
+
+circle.dot {
+    stroke: none;
+    }
+
+line.slope {
+    stroke: #CCCCFF;
+    stroke-width: 2px;
+    }
+line#line-european-union {
+    stroke: #5555FF;
+    stroke-width: 3px;
+    }
